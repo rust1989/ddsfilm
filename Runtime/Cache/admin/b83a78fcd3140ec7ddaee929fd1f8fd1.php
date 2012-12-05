@@ -48,16 +48,16 @@ function refreshMainFrame(url)
         </dd>
     </dl>
 <script type="text/javascript">refreshMainFrame('__GROUP__/User/');</script><?php break;?>
-<?php case "Img": ?><dl>
-        <dt><a href="" onclick="return showHide('items0');" target="_self">作品管理</a></dt>
+<?php case "Company": ?><dl>
+        <dt><a href="" onclick="return showHide('items0');" target="_self">公司信息管理</a></dt>
         <dd id="items0" style="display:block;">
             <ul>
-             <li><a href='__GROUP__/Img/imgsort'>作品分类管理</a></li> 
-			 <li><a href='__GROUP__/Img/'>作品管理</a></li>   
+			 <li><a href='__GROUP__/Company/about'>关于我们</a></li>   
+             <li><a href="__GROUP__/Company/contact">联系我们</a></li>
             </ul>
         </dd>
     </dl>
-<script type="text/javascript">refreshMainFrame('__GROUP__/Img/');</script><?php break;?>
+<script type="text/javascript">refreshMainFrame('__GROUP__/Company/about');</script><?php break;?>
 <?php case "Team": ?><dl>
         <dt><a href="" onclick="return showHide('items0');" target="_self">团队管理</a></dt>
         <dd id="items0" style="display:block;">
@@ -66,7 +66,7 @@ function refreshMainFrame(url)
             </ul>
         </dd>
     </dl>
-<script type="text/javascript">refreshMainFrame('__GROUP__/Img/');</script><?php break;?>
+<script type="text/javascript">refreshMainFrame('__GROUP__/Team/');</script><?php break;?>
 <?php case "News": ?><dl>
         <dt><a href="" onclick="return showHide('items0');" target="_self">公司信息管理</a></dt>
         <dd id="items0" style="display:block;">
