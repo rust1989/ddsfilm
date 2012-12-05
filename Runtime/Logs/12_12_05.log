@@ -1,0 +1,929 @@
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckRoute Behavior [ RunTime:0.000893s ]
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.001011s ]
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000666s ]
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckLang Behavior [ RunTime:0.003684s ]
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004541s ]
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Run LocationTemplate Behavior [ RunTime:0.001945s ]
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002039s ]
+[ 2012-12-05T18:40:20+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Run ParseTemplate Behavior [ RunTime:0.012317s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012417s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Run ContentReplace Behavior [ RunTime:0.000398s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Run TokenBuild Behavior [ RunTime:0.000426s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000563s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowRuntime Behavior [ RunTime:0.000459s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002023s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.000763s ]
+[ 2012-12-05T18:40:21+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.000828s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run CheckRoute Behavior [ RunTime:0.001863s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.002050s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001484s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run CheckLang Behavior [ RunTime:0.003063s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004921s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002807s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `name` = '111' ) LIMIT 1   [ RunTime:0.001942s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `email` = '222' ) LIMIT 1   [ RunTime:0.000402s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `weibo` = '333' ) LIMIT 1   [ RunTime:0.000293s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | SQL: INSERT INTO `dds_team` (`name`,`email`,`weibo`,`infor`) VALUES ('111','222','333','44') [ RunTime:0.000429s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run LocationTemplate Behavior [ RunTime:0.002841s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002937s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ParseTemplate Behavior [ RunTime:0.015426s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.015565s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ContentReplace Behavior [ RunTime:0.001337s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run TokenBuild Behavior [ RunTime:0.001582s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001142s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ShowRuntime Behavior [ RunTime:0.001412s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005839s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.001533s ]
+[ 2012-12-05T18:40:29+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.001648s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run CheckRoute Behavior [ RunTime:0.000997s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --END-- [ RunTime:0.001128s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000786s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run CheckLang Behavior [ RunTime:0.002623s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003846s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002535s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000917s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002352s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000852s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run LocationTemplate Behavior [ RunTime:0.002669s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --END-- [ RunTime:0.002748s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run ParseTemplate Behavior [ RunTime:0.016594s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016707s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run ContentReplace Behavior [ RunTime:0.000518s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run TokenBuild Behavior [ RunTime:0.000476s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000683s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run ShowRuntime Behavior [ RunTime:0.000538s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002445s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Run ShowPageTrace Behavior [ RunTime:0.001040s ]
+[ 2012-12-05T18:40:30+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --END-- [ RunTime:0.001125s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001823s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001999s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001388s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.002683s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004262s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003443s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000484s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002466s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000789s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002630s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002721s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.018735s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.018847s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.001106s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.001065s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000934s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001134s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004467s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001050s ]
+[ 2012-12-05T18:44:23+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001114s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckRoute Behavior [ RunTime:0.001012s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.001153s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000644s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckLang Behavior [ RunTime:0.002753s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003572s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run LocationTemplate Behavior [ RunTime:0.002410s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002538s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run ParseTemplate Behavior [ RunTime:0.016713s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016834s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run ContentReplace Behavior [ RunTime:0.000544s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run TokenBuild Behavior [ RunTime:0.000585s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000899s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowRuntime Behavior [ RunTime:0.000598s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002936s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.000988s ]
+[ 2012-12-05T18:44:25+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.001074s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.002169s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.002332s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001494s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.002833s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004531s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002362s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000771s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.006661s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000189s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002744s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002825s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.018692s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.018793s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000995s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000981s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000857s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.002134s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005189s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001335s ]
+[ 2012-12-05T18:47:55+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001436s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckRoute Behavior [ RunTime:0.000977s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.001125s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000707s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckLang Behavior [ RunTime:0.002933s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003870s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run LocationTemplate Behavior [ RunTime:0.002338s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002458s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run ParseTemplate Behavior [ RunTime:0.012538s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012657s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run ContentReplace Behavior [ RunTime:0.001026s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run TokenBuild Behavior [ RunTime:0.001104s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001093s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowRuntime Behavior [ RunTime:0.000666s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004433s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.001540s ]
+[ 2012-12-05T18:47:56+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.001695s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.000891s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001008s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000745s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003009s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004003s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002521s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000794s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002514s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000696s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002589s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002666s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.016672s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016771s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000390s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000517s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000677s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000503s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002450s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000786s ]
+[ 2012-12-05T18:48:47+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000851s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckRoute Behavior [ RunTime:0.001114s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.001286s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001037s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run CheckLang Behavior [ RunTime:0.003673s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.005055s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run LocationTemplate Behavior [ RunTime:0.002091s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002208s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run ParseTemplate Behavior [ RunTime:0.012462s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012582s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run ContentReplace Behavior [ RunTime:0.000503s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run TokenBuild Behavior [ RunTime:0.000464s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000603s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowRuntime Behavior [ RunTime:0.000470s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002236s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.000777s ]
+[ 2012-12-05T18:48:48+08:00 ] /index.php/admin/Team/addteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.000841s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run CheckRoute Behavior [ RunTime:0.000952s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.001082s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000760s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run CheckLang Behavior [ RunTime:0.003433s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004438s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002428s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `name` = '11' ) LIMIT 1   [ RunTime:0.003421s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `email` = '22' ) LIMIT 1   [ RunTime:0.000206s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `weibo` = '33' ) LIMIT 1   [ RunTime:0.000166s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [2] Missing argument 3 for GobalAction::_upload(), called in F:\wamp\www\ddsfilm\Lib\Action\Admin\TeamAction.class.php on line 35 and defined GobalAction.class.php 第 18 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [2] Missing argument 4 for GobalAction::_upload(), called in F:\wamp\www\ddsfilm\Lib\Action\Admin\TeamAction.class.php on line 35 and defined GobalAction.class.php 第 18 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [2] Missing argument 5 for GobalAction::_upload(), called in F:\wamp\www\ddsfilm\Lib\Action\Admin\TeamAction.class.php on line 35 and defined GobalAction.class.php 第 18 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Use of undefined constant ATTACHPATH - assumed 'ATTACHPATH' GobalAction.class.php 第 21 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Use of undefined constant ATTACHSIZE - assumed 'ATTACHSIZE' GobalAction.class.php 第 28 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Use of undefined constant ATTACHEXT - assumed 'ATTACHEXT' GobalAction.class.php 第 29 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Use of undefined constant ATTACH - assumed 'ATTACH' GobalAction.class.php 第 32 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Use of undefined constant THUMBMAXWIDTH - assumed 'THUMBMAXWIDTH' GobalAction.class.php 第 33 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Use of undefined constant THUMBMAXHEIGHT - assumed 'THUMBMAXHEIGHT' GobalAction.class.php 第 34 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Use of undefined constant THUMBSUFFIX - assumed 'THUMBSUFFIX' GobalAction.class.php 第 35 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | NOTIC: [8] Undefined property:  UploadFile::$zipImags UploadFile.class.php 第 172 行.
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | SQL: INSERT INTO `dds_team` (`name`,`email`,`weibo`,`infor`,`pic`) VALUES ('11','22','33','44','./Uploads/img/20121205/50bf269ae420d.png') [ RunTime:0.000473s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run LocationTemplate Behavior [ RunTime:0.002544s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002627s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ParseTemplate Behavior [ RunTime:0.012305s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012407s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ContentReplace Behavior [ RunTime:0.000378s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run TokenBuild Behavior [ RunTime:0.000440s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000589s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ShowRuntime Behavior [ RunTime:0.000544s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002153s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.002107s ]
+[ 2012-12-05T18:48:58+08:00 ] /index.php/admin/Team/saveteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.002199s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run CheckRoute Behavior [ RunTime:0.000905s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --END-- [ RunTime:0.001022s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000803s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run CheckLang Behavior [ RunTime:0.002796s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003813s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003526s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000829s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002941s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000874s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run LocationTemplate Behavior [ RunTime:0.002728s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --END-- [ RunTime:0.002828s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run ParseTemplate Behavior [ RunTime:0.017934s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --END-- [ RunTime:0.018063s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run ContentReplace Behavior [ RunTime:0.000458s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run TokenBuild Behavior [ RunTime:0.000473s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000582s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run ShowRuntime Behavior [ RunTime:0.000516s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002272s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Run ShowPageTrace Behavior [ RunTime:0.000921s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --END-- [ RunTime:0.001000s ]
+[ 2012-12-05T18:49:00+08:00 ] /index.php/admin/Uploads/img/20121205/50bf269ae420d.png | ERR: (ThinkException) 无法加载模块Uploads
+[ 2012-12-05T18:49:25+08:00 ] /index.php/admin/Uploads/img/20121205/50bf269ae420d.png | ERR: (ThinkException) 无法加载模块Uploads
+[ 2012-12-05T18:49:30+08:00 ] /index.php/admin/Uploads/img/20121205/50bf269ae420d.png | ERR: (ThinkException) 无法加载模块Uploads
+[ 2012-12-05T18:49:30+08:00 ] /index.php/admin/Uploads/img/20121205/50bf269ae420d.png | ERR: (ThinkException) 无法加载模块Uploads
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001227s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001436s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000698s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003355s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004262s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003110s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.002386s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003471s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.001246s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002660s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002736s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.018858s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.018961s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.001047s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.001001s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001626s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001110s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004989s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001111s ]
+[ 2012-12-05T18:51:10+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001180s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001285s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001467s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000919s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003031s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004221s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003037s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.001894s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003324s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.002293s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002984s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.003185s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.017705s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.017817s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000424s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000402s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001519s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000476s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003019s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000787s ]
+[ 2012-12-05T18:51:11+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000854s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.002512s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.002958s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001441s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003507s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.005279s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002395s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000741s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002494s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000563s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002941s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.003130s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.017133s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.017241s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000400s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000393s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001566s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000470s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003012s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000757s ]
+[ 2012-12-05T18:51:29+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000821s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.000985s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001118s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000982s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.003145s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004342s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.002636s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.002753s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | NOTIC: [8] Undefined variable: list 67d03f48b886e8775339b75efa5b0587.php 第 22 行.
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | NOTIC: [8] Undefined variable: list 67d03f48b886e8775339b75efa5b0587.php 第 30 行.
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | NOTIC: [8] Undefined variable: list 67d03f48b886e8775339b75efa5b0587.php 第 34 行.
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | NOTIC: [8] Undefined variable: list 67d03f48b886e8775339b75efa5b0587.php 第 39 行.
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | NOTIC: [8] Undefined variable: list 67d03f48b886e8775339b75efa5b0587.php 第 43 行.
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.016700s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016793s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000447s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.000469s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001425s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.000838s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003373s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000899s ]
+[ 2012-12-05T18:53:06+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.000975s ]
+[ 2012-12-05T18:53:09+08:00 ] /index.php/admin/Team/saveeditteam | ERR: (ThinkException) 非法操作saveeditteam
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.002412s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.002599s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001752s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.004617s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.006646s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.016301s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000740s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003138s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.001188s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002713s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002806s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.020224s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.020338s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.001284s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.001558s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001563s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001176s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005874s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001086s ]
+[ 2012-12-05T18:54:26+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001152s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.000995s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001141s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000660s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.003367s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004240s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002352s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SELECT * FROM `dds_team` WHERE id=1 LIMIT 1   [ RunTime:0.000888s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.002849s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.002948s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.012815s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012914s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000386s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.000702s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001720s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.000574s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003634s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000811s ]
+[ 2012-12-05T18:54:28+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.000878s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001671s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001818s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001161s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003097s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004384s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003112s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000853s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.004503s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000196s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002748s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002830s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.018997s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.019100s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.001014s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.001009s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001457s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.001301s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004985s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.001156s ]
+[ 2012-12-05T19:03:06+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.001245s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.001103s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001253s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000619s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.002732s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003502s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.003196s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SELECT * FROM `dds_team` WHERE id=1 LIMIT 1   [ RunTime:0.000574s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.002955s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.003066s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.014347s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014457s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000481s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.000548s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001595s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.000512s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003371s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000799s ]
+[ 2012-12-05T19:03:08+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.000865s ]
+[ 2012-12-05T19:03:12+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:03:12+08:00 ] /index.php/admin/Team | INFO: Run CheckRoute Behavior [ RunTime:0.001265s ]
+[ 2012-12-05T19:03:12+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --END-- [ RunTime:0.001480s ]
+[ 2012-12-05T19:03:12+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:03:12+08:00 ] /index.php/admin/Team | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000677s ]
+[ 2012-12-05T19:03:12+08:00 ] /index.php/admin/Team | INFO: Run CheckLang Behavior [ RunTime:0.002982s ]
+[ 2012-12-05T19:03:12+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003858s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002427s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000707s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002303s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000741s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Run LocationTemplate Behavior [ RunTime:0.002623s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --END-- [ RunTime:0.002701s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Run ParseTemplate Behavior [ RunTime:0.016922s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --END-- [ RunTime:0.017023s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Run ContentReplace Behavior [ RunTime:0.000442s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Run TokenBuild Behavior [ RunTime:0.000467s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001704s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Run ShowRuntime Behavior [ RunTime:0.000497s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003355s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Run ShowPageTrace Behavior [ RunTime:0.000819s ]
+[ 2012-12-05T19:03:13+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --END-- [ RunTime:0.000886s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.001115s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001254s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000759s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.002925s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003857s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.004325s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SELECT * FROM `dds_team` WHERE id=1 LIMIT 1   [ RunTime:0.001299s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.003522s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.003657s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.013071s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013171s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000389s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.000432s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001510s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.000529s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003049s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000815s ]
+[ 2012-12-05T19:03:14+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.000895s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001142s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001348s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000848s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003661s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004757s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002520s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000730s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002293s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000751s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002918s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.003300s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.016598s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016713s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000984s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000466s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001476s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000502s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003649s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000853s ]
+[ 2012-12-05T19:03:38+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000922s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.001212s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001417s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000801s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.003024s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004044s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002416s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SELECT * FROM `dds_team` WHERE id=1 LIMIT 1   [ RunTime:0.000920s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.002598s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.002674s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.012641s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012747s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000390s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.000427s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001494s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.000501s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003011s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000972s ]
+[ 2012-12-05T19:03:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.001061s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001651s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001878s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000798s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003223s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004273s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002523s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.001600s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002951s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000846s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002659s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002745s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.016990s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.017096s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000412s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000394s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001481s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000477s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002946s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000807s ]
+[ 2012-12-05T19:04:37+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000873s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.001008s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001148s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000726s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.003320s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004292s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002940s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SELECT * FROM `dds_team` WHERE id=1 LIMIT 1   [ RunTime:0.000972s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.002693s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.002777s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.011985s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012084s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000416s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.000479s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001490s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.000495s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003083s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.000935s ]
+[ 2012-12-05T19:04:39+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.001016s ]
+[ 2012-12-05T19:04:41+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:04:41+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run CheckRoute Behavior [ RunTime:0.000920s ]
+[ 2012-12-05T19:04:41+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.001048s ]
+[ 2012-12-05T19:04:41+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:04:41+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000893s ]
+[ 2012-12-05T19:04:41+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run CheckLang Behavior [ RunTime:0.002945s ]
+[ 2012-12-05T19:04:41+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004011s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002564s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `name` = '1122' ) AND ( `id` <> '1' ) LIMIT 1   [ RunTime:0.000854s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `email` = '22' ) AND ( `id` <> '1' ) LIMIT 1   [ RunTime:0.000115s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `weibo` = '33' ) AND ( `id` <> '1' ) LIMIT 1   [ RunTime:0.000087s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | SQL: UPDATE `dds_team` SET `name`='1122',`email`='22',`weibo`='33',`infor`='44' WHERE ( `id` = '1' ) [ RunTime:0.000384s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run LocationTemplate Behavior [ RunTime:0.002278s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002354s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ParseTemplate Behavior [ RunTime:0.011980s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012085s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ContentReplace Behavior [ RunTime:0.000385s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run TokenBuild Behavior [ RunTime:0.000425s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001471s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ShowRuntime Behavior [ RunTime:0.000476s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002994s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.000789s ]
+[ 2012-12-05T19:04:42+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.000855s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run CheckRoute Behavior [ RunTime:0.001333s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --END-- [ RunTime:0.001563s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000661s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run CheckLang Behavior [ RunTime:0.002986s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003973s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002499s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000938s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002615s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000964s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run LocationTemplate Behavior [ RunTime:0.002729s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --END-- [ RunTime:0.002820s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run ParseTemplate Behavior [ RunTime:0.016713s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016832s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run ContentReplace Behavior [ RunTime:0.000427s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run TokenBuild Behavior [ RunTime:0.000434s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001451s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run ShowRuntime Behavior [ RunTime:0.000470s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002967s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Run ShowPageTrace Behavior [ RunTime:0.000783s ]
+[ 2012-12-05T19:04:43+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --END-- [ RunTime:0.000849s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.001052s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.001220s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001037s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.004251s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.005646s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002408s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SELECT * FROM `dds_team` WHERE id=1 LIMIT 1   [ RunTime:0.000921s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.002722s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.002803s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.013558s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013757s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000663s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.000634s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001712s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.000696s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004024s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.001430s ]
+[ 2012-12-05T19:05:01+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.001535s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run CheckRoute Behavior [ RunTime:0.001119s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ route_check ] --END-- [ RunTime:0.001272s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000610s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run CheckLang Behavior [ RunTime:0.002867s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003624s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002402s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `name` = '1122' ) AND ( `id` <> '1' ) LIMIT 1   [ RunTime:0.001364s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `email` = '22' ) AND ( `id` <> '1' ) LIMIT 1   [ RunTime:0.000548s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | SQL: SELECT `id` FROM `dds_team` WHERE ( `weibo` = '33' ) AND ( `id` <> '1' ) LIMIT 1   [ RunTime:0.000292s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [2] Missing argument 3 for GobalAction::_upload(), called in F:\wamp\www\ddsfilm\Lib\Action\Admin\TeamAction.class.php on line 35 and defined GobalAction.class.php 第 18 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [2] Missing argument 4 for GobalAction::_upload(), called in F:\wamp\www\ddsfilm\Lib\Action\Admin\TeamAction.class.php on line 35 and defined GobalAction.class.php 第 18 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [2] Missing argument 5 for GobalAction::_upload(), called in F:\wamp\www\ddsfilm\Lib\Action\Admin\TeamAction.class.php on line 35 and defined GobalAction.class.php 第 18 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Use of undefined constant ATTACHPATH - assumed 'ATTACHPATH' GobalAction.class.php 第 21 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Use of undefined constant ATTACHSIZE - assumed 'ATTACHSIZE' GobalAction.class.php 第 28 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Use of undefined constant ATTACHEXT - assumed 'ATTACHEXT' GobalAction.class.php 第 29 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Use of undefined constant ATTACH - assumed 'ATTACH' GobalAction.class.php 第 32 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Use of undefined constant THUMBMAXWIDTH - assumed 'THUMBMAXWIDTH' GobalAction.class.php 第 33 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Use of undefined constant THUMBMAXHEIGHT - assumed 'THUMBMAXHEIGHT' GobalAction.class.php 第 34 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Use of undefined constant THUMBSUFFIX - assumed 'THUMBSUFFIX' GobalAction.class.php 第 35 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | NOTIC: [8] Undefined property:  UploadFile::$zipImags UploadFile.class.php 第 172 行.
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | SQL: UPDATE `dds_team` SET `name`='1122',`email`='22',`weibo`='33',`infor`='44',`pic`='./Uploads/img/20121205/50bf2a6251802.png' WHERE ( `id` = '1' ) [ RunTime:0.000481s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run LocationTemplate Behavior [ RunTime:0.002194s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_template ] --END-- [ RunTime:0.002267s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ParseTemplate Behavior [ RunTime:0.012187s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012292s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ContentReplace Behavior [ RunTime:0.000436s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run TokenBuild Behavior [ RunTime:0.000399s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001474s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ShowRuntime Behavior [ RunTime:0.000469s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002964s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Run ShowPageTrace Behavior [ RunTime:0.000776s ]
+[ 2012-12-05T19:05:06+08:00 ] /index.php/admin/Team/saveeditteam | INFO: Tag[ view_end ] --END-- [ RunTime:0.000840s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run CheckRoute Behavior [ RunTime:0.002000s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ route_check ] --END-- [ RunTime:0.002305s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001165s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run CheckLang Behavior [ RunTime:0.003187s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004494s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.004150s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000269s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002500s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | SQL: SELECT * FROM `dds_team`  [ RunTime:0.001170s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run LocationTemplate Behavior [ RunTime:0.004541s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_template ] --END-- [ RunTime:0.004646s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run ParseTemplate Behavior [ RunTime:0.018203s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_parse ] --END-- [ RunTime:0.018307s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run ContentReplace Behavior [ RunTime:0.001068s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run TokenBuild Behavior [ RunTime:0.001166s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001736s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run ShowRuntime Behavior [ RunTime:0.001185s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_filter ] --END-- [ RunTime:0.005408s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Run ShowPageTrace Behavior [ RunTime:0.001069s ]
+[ 2012-12-05T19:05:07+08:00 ] /index.php/admin/Team | INFO: Tag[ view_end ] --END-- [ RunTime:0.001136s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001113s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001260s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000896s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.004513s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.005637s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002972s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.001301s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002957s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000822s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002928s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.003019s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.016955s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.017063s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000423s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000399s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001482s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000467s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002951s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000897s ]
+[ 2012-12-05T19:07:01+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000969s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckRoute Behavior [ RunTime:0.001951s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ route_check ] --END-- [ RunTime:0.002165s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001340s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run CheckLang Behavior [ RunTime:0.004165s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ app_begin ] --END-- [ RunTime:0.005750s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.004084s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | SQL: SELECT * FROM `dds_team` WHERE id=1 LIMIT 1   [ RunTime:0.000411s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run LocationTemplate Behavior [ RunTime:0.002359s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_template ] --END-- [ RunTime:0.002434s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ParseTemplate Behavior [ RunTime:0.014620s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_parse ] --END-- [ RunTime:0.014717s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ContentReplace Behavior [ RunTime:0.000976s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run TokenBuild Behavior [ RunTime:0.001150s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001431s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowRuntime Behavior [ RunTime:0.001065s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_filter ] --END-- [ RunTime:0.004817s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Run ShowPageTrace Behavior [ RunTime:0.001059s ]
+[ 2012-12-05T19:07:15+08:00 ] /index.php/admin/Team/editteam/id/1 | INFO: Tag[ view_end ] --END-- [ RunTime:0.001124s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run CheckRoute Behavior [ RunTime:0.001266s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ route_check ] --END-- [ RunTime:0.001431s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000721s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run CheckLang Behavior [ RunTime:0.003189s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ app_begin ] --END-- [ RunTime:0.004112s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002413s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | SQL: SELECT COUNT(*) AS tp_count FROM `dds_team` LIMIT 1   [ RunTime:0.000856s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | SQL: SHOW COLUMNS FROM `dds_team` [ RunTime:0.002466s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | SQL: SELECT * FROM `dds_team`  [ RunTime:0.000727s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run LocationTemplate Behavior [ RunTime:0.002671s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_template ] --END-- [ RunTime:0.002757s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run ParseTemplate Behavior [ RunTime:0.019776s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_parse ] --END-- [ RunTime:0.019909s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run ContentReplace Behavior [ RunTime:0.000429s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run TokenBuild Behavior [ RunTime:0.000409s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001469s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run ShowRuntime Behavior [ RunTime:0.000478s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002977s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Run ShowPageTrace Behavior [ RunTime:0.000791s ]
+[ 2012-12-05T19:07:25+08:00 ] /index.php/admin/Team/ | INFO: Tag[ view_end ] --END-- [ RunTime:0.000861s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run CheckRoute Behavior [ RunTime:0.001096s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ route_check ] --END-- [ RunTime:0.001262s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001160s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run CheckLang Behavior [ RunTime:0.004310s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ app_begin ] --END-- [ RunTime:0.005846s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run LocationTemplate Behavior [ RunTime:0.002644s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_template ] --END-- [ RunTime:0.002759s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ParseTemplate Behavior [ RunTime:0.016036s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016139s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ContentReplace Behavior [ RunTime:0.000384s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run TokenBuild Behavior [ RunTime:0.000391s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001572s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ShowRuntime Behavior [ RunTime:0.000546s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003105s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ShowPageTrace Behavior [ RunTime:0.000915s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_end ] --END-- [ RunTime:0.001005s ]
+[ 2012-12-05T19:07:40+08:00 ] /index.php/admin/News/ | ERR: (ThinkException) 无法加载模块News
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run CheckRoute Behavior [ RunTime:0.001666s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ route_check ] --END-- [ RunTime:0.001818s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ReadHtmlCache Behavior [ RunTime:0.002382s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run CheckLang Behavior [ RunTime:0.003758s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ app_begin ] --END-- [ RunTime:0.006376s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run LocationTemplate Behavior [ RunTime:0.002222s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_template ] --END-- [ RunTime:0.002363s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ParseTemplate Behavior [ RunTime:0.017165s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_parse ] --END-- [ RunTime:0.017267s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ContentReplace Behavior [ RunTime:0.001082s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run TokenBuild Behavior [ RunTime:0.001103s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run WriteHtmlCache Behavior [ RunTime:0.003467s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ShowRuntime Behavior [ RunTime:0.001140s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_filter ] --END-- [ RunTime:0.007106s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ShowPageTrace Behavior [ RunTime:0.001079s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_end ] --END-- [ RunTime:0.001150s ]
+[ 2012-12-05T19:09:17+08:00 ] /index.php/admin/News/ | ERR: (ThinkException) 无法加载模块News
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ route_check ] --START--
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run CheckRoute Behavior [ RunTime:0.001229s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ route_check ] --END-- [ RunTime:0.001429s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ app_begin ] --START--
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000645s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run CheckLang Behavior [ RunTime:0.002986s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ app_begin ] --END-- [ RunTime:0.003806s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_template ] --START--
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run LocationTemplate Behavior [ RunTime:0.002750s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_template ] --END-- [ RunTime:0.002983s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_parse ] --START--
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ParseTemplate Behavior [ RunTime:0.017180s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_parse ] --END-- [ RunTime:0.017291s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_filter ] --START--
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ContentReplace Behavior [ RunTime:0.000450s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run TokenBuild Behavior [ RunTime:0.000405s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run WriteHtmlCache Behavior [ RunTime:0.001628s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ShowRuntime Behavior [ RunTime:0.000484s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_filter ] --END-- [ RunTime:0.003167s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_end ] --START--
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Run ShowPageTrace Behavior [ RunTime:0.000773s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/Menu/menu/action/News | INFO: Tag[ view_end ] --END-- [ RunTime:0.000839s ]
+[ 2012-12-05T19:09:18+08:00 ] /index.php/admin/News/ | ERR: (ThinkException) 无法加载模块News
