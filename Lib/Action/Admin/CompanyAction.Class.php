@@ -5,8 +5,9 @@ class CompanyAction extends GobalAction{
 	  parent::index();
 	  import('ORG.Util.Page');
 	}
-	public functin index(){
+	public function index(){
 		
 	}
+	public function 
 }
 ?>
