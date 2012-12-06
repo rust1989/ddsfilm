@@ -7,6 +7,7 @@ class CompanyAction extends GobalAction {
 	  parent::index();
 	  import('ORG.Util.Page');
 	}
+<<<<<<< HEAD
 	public function article(){
 		$method=isset($_GET['method'])?dhtml($_GET['method']):"";
 		$model=strtoupper(dhtml($_GET['model']));
@@ -83,3 +84,31 @@ class CompanyAction extends GobalAction {
 	}
 	
 }
+=======
+	public function contact(){
+		$content=dhtml($_POST['content']);
+		$action=isset($_POST['action'])?$_POST['action']:"index";
+		$DB=D('article');
+		$DB->create();
+	    switch($action){
+		 case "index":
+		  $action="add";
+		 break;
+		 case "add":
+		  	$id=$DB->add();
+			$action="save";
+		break;
+		case "save":
+			$query=$DB->save();
+		break;
+		}
+		$this->assign("action",$action);
+		$this->assign("id",$id);
+		$this->display('index');
+	}
+	public function  about(){
+		$this->display('index');
+	} 
+}
+?>
+>>>>>>> 09c7db3d94c5e39a5a9bee407adce6e7eeafe50e

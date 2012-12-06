@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
 <link rel="stylesheet" href="__CSS__/Admin/common.css" type="text/css" />
 <title>管理区域</title>
+<<<<<<< HEAD
 <script type="text/javascript" src="__JS__/kindeditor/kindeditor-min.js"></script>
 <script type="text/javascript" src="__JS__/kindeditor/lang/zh_CN.js"></script>
 <script type="text/javascript">
@@ -16,12 +17,21 @@ KindEditor.ready(function(K) {
 						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
 						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
 	});
+=======
+<script type="text/javascript" src="__JS__/jquery.js"></script>
+<script type="text/javascript" src="__JS__/kindeditor/kindeditor.js"></script>
+<script type="text/javascript" src="__JS__/kindeditor/lang/zh_CN.js"></script>
+<script type="text/javascript">
+KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content"]');
+>>>>>>> 09c7db3d94c5e39a5a9bee407adce6e7eeafe50e
 });
 </script>
 </head>
 
 <body>
 <div id="man_zone">
+<<<<<<< HEAD
  
    <table width="99%" border="0" align="center"  cellpadding="3" cellspacing="1" class="table_style">
    <tr>
@@ -40,6 +50,21 @@ KindEditor.ready(function(K) {
     </form> 
   
   </table> 
+=======
+<form method="post" action="__URL__" enctype="multipart/form-data">
+   <table  width="99%" border="0" align="center"  cellpadding="3" cellspacing="1" class="table_style">
+    <tr>
+      <td width="20%" class="left_title_2"><?php echo L('CONTENT');?>:</td>
+      <td width="80%" ><textarea name="content" style="width:700px;height:400px;visibility:hidden;"><?php echo htmlspecialchars($content); ?></textarea></td>
+    </tr>
+    <input type="hidden" name="id" value="<?php echo ($id); ?>" />
+     <tr id="box"></tr>
+    <tr>
+      <td colspan="2" class="right_title_1" height="50"><input type="submit" name="submit" class="submit" value=""  /></td>
+    </tr>
+  </table>
+   </form>
+>>>>>>> 09c7db3d94c5e39a5a9bee407adce6e7eeafe50e
 </div>
 </body>
 </html>

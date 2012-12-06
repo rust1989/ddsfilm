@@ -21,8 +21,14 @@
 			<li class="navleft"></li>
 			<li id='d1' style="margin-left:-1px"><A href="__GROUP__/Menu/menu" target="mcMenuFrame" class="tabon">首页</A></li>
 			<li id='d2'><A href="__GROUP__/Menu/menu/action/User" target="mcMenuFrame" >帐户管理</A></li>
+<<<<<<< HEAD
             <li id='d2'><A href="__GROUP__/Menu/menu/action/Project" target="mcMenuFrame" >作品管理</A></li>
              <li id='d2'><A href="__GROUP__/Menu/menu/action/Company" target="mcMenuFrame" >公司信息管理</A></li>
+=======
+            <li id='d2'><A href="__GROUP__/Menu/menu/action/Img" target="mcMenuFrame" >作品管理</A></li>
+             <li id='d2'><A href="__GROUP__/Menu/menu/action/Company" target="mcMenuFrame" >公司信息管理</A></li>
+              <li id='d2'><A href="__GROUP__/Menu/menu/action/Team" target="mcMenuFrame" >团队管理</A></li>
+>>>>>>> 09c7db3d94c5e39a5a9bee407adce6e7eeafe50e
 			<li class="navright"></li>
 		</ul>
 	</div>
