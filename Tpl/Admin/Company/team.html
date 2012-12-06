@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<link rel="stylesheet" href="__CSS__/Admin/common.css" type="text/css" />
+<load href="__JS__/Admin/jquery.js" />
+<title>管理区域</title>
+</head>
+
+<body>
+<div id="man_zone">
+    
+   <table width="99%" border="0" align="center"  cellpadding="3" cellspacing="1" class="table_style">
+   <tr>
+     <td colspan="6" height="30" align="center"> <a href="__URL__/teamcontrol/method/add">增加导演</a></td>
+   </tr>
+   <div id="checkbox">
+   <tr>
+      <td width="10%" class="right_title_1"></td>
+      <td width="10%" class="right_title_1"><?php echo L('ID'); ?>&nbsp;</td>
+      <td width="20%" class="right_title_1">&nbsp;<?php echo L('IDNAME'); ?></td>
+      <td width="20%" class="right_title_1">&nbsp;<?php echo L('IMG'); ?></td>
+      <td width="20%" class="right_title_1">&nbsp;<?php echo L('INFOR'); ?></td>
+      <td width="20%" class="right_title_1">&nbsp;<?php echo L('ACTION'); ?></td> 
+   </tr>
+    <volist name="list" id="vo" mod="2"> 
+    <eq name="mod" value="0">
+    <tr>
+       <td width="10%" class="right_title_1"><input type="checkbox" name="id" id="id" value="{$vo.id}" /></td>
+       <td width="10%" class="right_title_1">{$vo.id}</td>
+       <td width="20%" class="right_title_1">{$vo.name}</td>
+       <td width="20%" class="right_title_1"><img src="{$vo.pic|substr=1}" height="100" width="100" /></td>
+       <td width="20%" class="right_title_1">{$vo.infor}</td>
+       <td width="20%" class="right_title_1">&nbsp;<a href="__URL__/teamcontrol/id/{$vo.id}/method/edit"><?php echo L('EDIT'); ?></td> 
+    </tr>
+    </eq>
+    <eq name="mod" value="1">
+    <tr>
+       <td width="10%" class="right_title_1"><input type="checkbox" name="id" id="id" value="{$vo.id}" /></td>
+       <td width="10%" class="right_title_1">{$vo.id}</td>
+       <td width="20%" class="right_title_1">{$vo.name}</td>
+       <td width="20%" class="right_title_1"><img src="{$vo.pic|substr=1}" height="100" width="100" /></td>
+       <td width="20%" class="right_title_1">{$vo.infor}</td>
+       <td width="20%" class="right_title_1">&nbsp;<a href="__URL__/teamcontrol/id/{$vo.id}/method/edit"> <?php echo L('EDIT'); ?></td> 
+    </tr>
+    </eq> 
+    </volist>
+    </div>
+    <tr>
+      <td colspan="6" class="right_title_2" height="50">{$show} </td>
+    </tr>
+  
+  </table>
+</div>
+<load href="__JS__/Admin/dellist.js" />
+<script type="text/javascript">
+$(document).ready(function(){
+	var module="team"
+	$("#del").delList("__URL__","del",module);
+});
+</script>
+</body>
+</html>

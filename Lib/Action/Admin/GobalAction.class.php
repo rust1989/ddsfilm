@@ -107,6 +107,40 @@
     return true; 
 	
     }
-	
+	/*
+	query 结果
+	method 操作
+	*/
+	public function _jump($query,$url="index",$method="add"){
+		switch($method){
+		case "add":
+		if($query) $this->success(L('ADDSUCCESS'),__URL__."/".$url);
+		else $this->error(L('ADDFAILURE'),__URL__."/".$url);
+		break;
+		case "edit":
+		if($query) $this->success(L('EDITSUCCESS'),__URL__."/".$url);
+		else $this->error(L('EDITFAILURE'),__URL__."/".$url);
+	    }
+	}
+	/*
+	删除数据
+	id号
+	DB模块
+	*/
+	public function _del($id,$DB){
+		
+		$DB=D("$DB");
+		if(empty($id)||empty($DB)) return false;
+		if(is_numeric($id)){
+		  $list=$DB->where(array('id'=>$id))->delete();	
+		}else{
+		$id=explode(',',$id);
+		
+		 for($i=0;$i<count($id);$i++){
+		 $list=$DB->where(array('id'=>$id[$i]))->delete();
+		 }
+		}
+		return true;
+	}
 }
 ?>

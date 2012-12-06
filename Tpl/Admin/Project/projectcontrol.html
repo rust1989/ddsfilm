@@ -1,0 +1,89 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<link rel="stylesheet" href="__CSS__/Admin/common.css" type="text/css" />
+<title>管理区域</title>
+
+</head>
+
+<body>
+<div id="man_zone">
+ 
+   <table width="99%" border="0" align="center"  cellpadding="3" cellspacing="1" class="table_style">
+   <tr>
+     <td class="right_title_1" height="50" colspan="2"></td>
+   </tr>
+   <form method="post" action="__URL__/save/method/{$method}" enctype="multipart/form-data">
+    
+    <tr>
+      <td width="40%" class="left_title_2"><?php echo L('IDNAME');?>:</td>
+      <td width="60%" ><input type="text" name="title" value="{$list.title}" /></td>
+    </tr> 
+     <tr>
+      <td width="40%" class="left_title_2"><?php echo L('SORT');?>:</td>
+      <td width="60%" >
+      <select id="sid" name="sid">
+       <volist name="sorts" id="vo"> 
+         <if condition="$vo['id'] eq $list['sid']">
+         <option value="{$vo.id}" selected="selected">{$vo.name}</option>
+         <else />
+          <option value="{$vo.id}">{$vo.name}</option>
+          </if>
+        </volist>
+      </select>
+      </td>
+    </tr> 
+    <tr>
+      <td width="40%" class="left_title_2"><?php echo L('YEAR');?>:</td>
+      <td width="60%" ><input type="text" name="year" value="{$list.year}" /></td>
+    </tr> 
+    <tr>
+      <td width="40%" class="left_title_2"><?php echo L('CLIENT');?>:</td>
+      <td width="60%" ><input type="text" name="client" value="{$list.client}" /></td>
+    </tr> 
+    <tr>
+      <td width="40%" class="left_title_2"><?php echo L('DIRECTOR');?>:</td>
+      <td width="60%" >
+      <select id="director" name="director">
+       <volist name="directors" id="vo"> 
+         <if condition="$vo['name'] eq $list['director']">
+         <option value="{$vo.name}" selected="selected">{$vo.name}</option>
+         <else />
+          <option value="{$vo.name}">{$vo.name}</option>
+          </if>
+        </volist>
+      </select>
+      </td>
+    </tr> 
+     <tr>
+      <td width="40%" class="left_title_2"><?php echo L('PRODUCER');?>:</td>
+      <td width="60%" ><input type="text" name="producer" value="{$list.producer}" /></td>
+    </tr> 
+     <tr>
+      <td width="40%" class="left_title_2"><?php echo L('AGENCY');?>:</td>
+      <td width="60%" ><input type="text" name="agency" value="{$list.agency}" /></td>
+    </tr> 
+     <tr>
+      <td width="40%" class="left_title_2"><?php echo L('PRODUCT');?>:</td>
+      <td width="60%" ><input type="text" name="product" value="{$list.product}" /></td>
+    </tr> 
+      <tr>
+      <td width="40%" class="left_title_2"><?php echo L('IMG');?>:</td>
+      <td width="60%" ><input type="file" name="pic" /></td>
+    </tr> 
+      <tr>
+      <td width="40%" class="left_title_2"><?php echo L('VIDEO');?>:</td>
+      <td width="60%" ><input type="text" name="video" value="{$list.video}" /></td>
+    </tr> 
+    <input type="hidden" name="id" value="{$list.id}" />
+    <tr>
+      <td colspan="2" class="right_title_1" height="50"><input type="submit" name="submit" class="submit" value=""  /></td>
+    </tr>
+    </form> 
+  
+  </table> 
+</div>
+</body>
+</html>

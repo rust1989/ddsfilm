@@ -133,9 +133,9 @@ textarea, input{ padding:2px; border:1px solid; border-color:#666 #eee #eee #666
 .radio{ margin-top:-1px; border:none; vertical-align:middle; }
 .checkbox{ height:14px; border:none; vertical-align:middle; }
 .datalist{ clear:both; width:100%; border-top:2px solid #B5CFD9; border-bottom:2px solid #B5CFD9; }
-	.datalist th{ line-height:250%; text-align:left; background:url(bg_repx.gif) repeat-x 0 bottom; color:#9EBECB; font-size:12px; }
-	.datalist td{ padding:5px 0; background:url(bg_repx.gif) repeat-x 0 bottom; }
-	.currenttr td{ background:#F2F9FD url(bg_repx.gif) repeat-x 0 bottom; }
+	.datalist th{ line-height:250%; text-align:left; background:url(../../images/bg_repx.gif) repeat-x 0 bottom; color:#9EBECB; font-size:12px; }
+	.datalist td{ padding:5px 0; background:url(../../bg_repx.gif) repeat-x 0 bottom; }
+	.currenttr td{ background:#F2F9FD url(../../bg_repx.gif) repeat-x 0 bottom; }
 	.datalist a{ text-decoration:none; }
 		.datalist a:hover{ text-decoration:none; }
 	.datalist .txt{ width:90%; overflow:hidden; }
@@ -169,7 +169,7 @@ h3{ font-size:14px; }
 	.i a{ text-decoration:underline; }
 	.i a:hover{ text-decoration:none; }
 .memlist{ list-style:none; margin:7px 0 25px; padding-top:2px; border-top:2px solid #B5CFD9; width:80%;}
-	.memlist li{ clear:both; overflow:hidden; zoom:1; padding:5px 0; *padding:1px 0 5px; line-height:150%; background:url(bg_repx.gif) repeat-x 0 bottom; }
+	.memlist li{ clear:both; overflow:hidden; zoom:1; padding:5px 0; *padding:1px 0 5px; line-height:150%; background:url(../../bg_repx.gif) repeat-x 0 bottom; }
 	.memlist em{ float:left; width:120px; font:12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; }
 	.memlist .memcont{ width:480px; }
 .ajax{ width:360px; border:1px solid #89B3C2; }

@@ -58,7 +58,30 @@ return array(
 	
 	'EMAIL'=>'邮箱',
 	
-	'WEIBO'=>'微博'
+	'WEIBO'=>'微博',
+	
+	'CONTACT'=>'联系我们',
+	
+	'ABOUT'=>'关于我们',
+	
+	'ENGLISH'=>'英文',
+	
+	/*作品*/
+	'YEAR'=>'年份',
+	
+	'CLIENT'=>'客户',
+	
+	'DIRECTOR'=>'导演',
+	
+	'PRODUCER'=>'制片人',
+	
+	'AGENCY'=>'机构',
+	
+	'PRODUCT'=>'出品',
+	
+	'VIDEO'=>'视频',
+	
+	'SORT'=>'分类'
 	
 );
 
