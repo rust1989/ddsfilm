@@ -704,4 +704,8 @@ function getip(){
    }
    return ($ip);
   }
+  
+function _json($arr){
+	echo json_encode($arr);
+}  
 ?>

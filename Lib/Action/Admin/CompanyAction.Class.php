@@ -1,13 +1,13 @@
+
 <?php
 // 本类由系统自动生成，仅供测试用途
 class CompanyAction extends GobalAction {
-	
 	public function __construct(){
 	  parent::__construct();
 	  parent::index();
 	  import('ORG.Util.Page');
 	}
-<<<<<<< HEAD
+
 	public function article(){
 		$method=isset($_GET['method'])?dhtml($_GET['method']):"";
 		$model=strtoupper(dhtml($_GET['model']));
@@ -82,33 +82,4 @@ class CompanyAction extends GobalAction {
 		$DB=isset($_POST['db'])?dhtml($_POST['db']):"";
 		return $this->_del($id,$DB);	
 	}
-	
 }
-=======
-	public function contact(){
-		$content=dhtml($_POST['content']);
-		$action=isset($_POST['action'])?$_POST['action']:"index";
-		$DB=D('article');
-		$DB->create();
-	    switch($action){
-		 case "index":
-		  $action="add";
-		 break;
-		 case "add":
-		  	$id=$DB->add();
-			$action="save";
-		break;
-		case "save":
-			$query=$DB->save();
-		break;
-		}
-		$this->assign("action",$action);
-		$this->assign("id",$id);
-		$this->display('index');
-	}
-	public function  about(){
-		$this->display('index');
-	} 
-}
-?>
->>>>>>> 09c7db3d94c5e39a5a9bee407adce6e7eeafe50e
