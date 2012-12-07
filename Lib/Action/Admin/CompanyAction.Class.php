@@ -1,4 +1,3 @@
-
 <?php
 // 本类由系统自动生成，仅供测试用途
 class CompanyAction extends GobalAction {
@@ -27,43 +26,27 @@ class CompanyAction extends GobalAction {
 		$this->display();
 	}
 	
-	public function team(){
-		$count=D('team')->count();
-		$page=new Page($count,10);
-		$show=$page->show();
-		$list=D('team')->select();
-		$this->assign('list',$list);
-		$this->assign('show',$show);
-		$this->display();
-	}
-	public function teamcontrol(){
-		$method=isset($_GET['method'])?dhtml($_GET['method']):'';
-		if(empty($method)) $this->error('',__URL__.'/team');
-		if($method=="edit"){
-		   $id=isset($_GET['id'])?intval($_GET['id']):"";
-		   if(!$id) $this->error(L('IDNULL'),__URL__.'/team');	
-		   $list=D('team')->where("id=$id")->find();
-		   $this->assign('list',$list);	
-		}
-		$this->assign('method',$method);
-		$this->display();
-	}
 	public function save(){
+		$model=isset($_GET['model'])?dhtml($_GET['model']):"";
+		if(empty($model)) $this->redirect('Index/main');
+		$DB=D("".$model."");
 		$method=dhtml($_GET['method']);
-		if(empty($method)) $this->error('',__URL__.'/team');
-		$DB=new TeamModel('team');
+		if(empty($method)) $this->error('',__URL__.'/'.$model);
+		//$DB=new TeamModel('team');
 		if (!$DB->create()){
-		$this->error($DB->getError(),__URL__.'/team');
+		$this->error($DB->getError(),__URL__.'/'.$model);
 		}else{
 		$module="img";
 		$path=date("Ymd");
 			switch($method){
 				case "add":
+				if(!empty($_FILES['pic']['name'])){
 				$pic=$this->_upload($module,$path);
 				$img=$pic[0]['savepath'].$pic[0]['savename'];
 				$DB->pic=$img;
+				}
 				$query=$DB->add();
-				$this->_jump($query,"team");
+				$this->_jump($query,"_list/model/$model");
 				break;
 				case "edit":
 				if(!empty($_FILES['pic']['name'])){
@@ -72,7 +55,7 @@ class CompanyAction extends GobalAction {
 				$DB->pic=$img;
 				}
 				$query=$DB->save();
-				$this->_jump($query,"team","edit");
+				$this->_jump($query,"_list/model/$model","edit");
 				break;
 			}
 		}
@@ -81,5 +64,38 @@ class CompanyAction extends GobalAction {
 		$id=isset($_POST['id'])?dhtml($_POST['id']):"";
 		$DB=isset($_POST['db'])?dhtml($_POST['db']):"";
 		return $this->_del($id,$DB);	
+	}
+	public function _list(){
+		$model=isset($_GET['model'])?dhtml($_GET['model']):"";
+		if(empty($model)) $this->redirect('Index/main');
+		$DB=D("".$model."");
+		$count=$DB->count();
+		$page=new Page($count,10);
+		$show=$page->show();
+		$list=$DB->select();
+		$this->assign('list',$list);
+		$this->assign('show',$show);
+		$this->assign('model',$model);
+		$this->display();
+	}
+    
+	public function control(){
+		$model=isset($_GET['model'])?dhtml($_GET['model']):"";
+		if(empty($model)) $this->redirect('Index/main');
+		$DB=D("".$model."");
+		$method=isset($_GET['method'])?dhtml($_GET['method']):'';
+		if(empty($method)) $this->error('',__URL__.'/model/'.$model);
+		if($method=="edit"){
+		   $id=isset($_GET['id'])?intval($_GET['id']):"";
+		   if(!$id) $this->error(L('IDNULL'),__URL__.'/model/'.$model);	
+		   $list=$DB->where("id=$id")->find();
+		   $this->assign('list',$list);	
+		}
+		$columns=$DB->query("show columns from ".C('DB_PREFIX')."$model");
+		unset($columns[0]);
+		$this->assign('columns',$columns);
+		$this->assign('method',$method);
+		$this->assign('model',$model);
+		$this->display();
 	}
 }

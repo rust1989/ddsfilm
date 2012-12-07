@@ -1,4 +1,4 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <head>
 	<meta charset=utf-8>
 	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
@@ -12,11 +12,11 @@
 	<meta name=apple-mobile-web-app-capable content=yes>
 	
 	<meta name=apple-mobile-web-app-status-bar-style content=black>
-    <load href='__JS__/jquery.js' />
+    <script type="text/javascript" src="__JS__/jquery.js"></script>
 
     <link rel="stylesheet" href="__CSS__/base.css" type="text/css" />
 	<!--[if IE]>
-    <load href='__JS__/html5.js' />
+    <script type="text/javascript" src="__JS__/html5.js"></script>
      <![endif]-->
 <script type="text/javascript">
 function loadTimeout(){
@@ -28,7 +28,6 @@ function loadTimeout(){
             if(--second < 1){
 			 document.getElementById('load').style.display = 'none';
 			 document.getElementById('contain').style.display='block';
-			 $("img.thumb").show().lazyload();	
 			 clearInterval(timer);
 			}
         },100);
@@ -75,91 +74,52 @@ function loadTimeout(){
         <div id="top-navigation">	
                 <ul class="menu" id="menu-top-navigation">
                     <li class="menu-item">
-                        <a href="__URL__/" class="parent" data="全部">ALL</a>
+                        <a href="" onClick="jump("__URL__/about")" class="parent" data="关于我们">ABOUT</a>
                     </li>
                 
                     <li class="menu-item">
-                        <a href="" class="parent" data="分类">BY GENRE</a>
-                        <ul class="sub-menu">
-                          <volist name="procates" id="vo">
-                          <if condition="$i eq 1">
-                            <li class=" first menu-item">
-                                <a class="child" href="__URL__/index/id/{$vo.id}" data="{$vo.name}">{$vo.ename}</a>
-                            </li>
-                          <else />
-                            <li class="menu-item">
-                                <a class="child" href="__URL__/index/id/{$vo.id}" data="{$vo.name}">{$vo.ename}</a>
-                            </li>
-                          </if>
-                          </volist>  
-                        </ul>
+                        <a onClick="jump("__URL__/team")" class="parent" data="团队">TEAM</a>  
+                    </li>
+                    <li class="menu-item">
+                        <a onClick="jump("__URL__/client")" class="parent" data="客户">CLIENTS</a>  
+                    </li>
+                    <li class="menu-item">
+                        <a onClick="jump("__URL__/contact")" class="parent" data="联系我们">CONTACT</a>  
                     </li>
                 </ul>
         </div> 
    </div> 
 </header>
-  
 
-
-
-<div id="main">
+<div id="main" role="main">
    <div id="MainOverlay"></div>
-   <section id="box" class="content clearfix">
- 
-     <volist name="projects" id="vo">
-     <article class="loading">
-       <div class="frame " >
-         <div class="thumbCount" >
-           <a > 
-             <img class="thumb" src="__IMG__/loading.gif" data-original="{$vo.pic|substr=1}" style="transition:opacity 0.75s linear 0s;opacity:1" />
-           </a>
-         </div>
+   <section id="box" class="clearfix">
+     <?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><article class="intro">
+       <div class="clearfix"><img src="<?php echo (substr($vo["pic"],1)); ?>"></div>
+       <div class="infor">
+         <div id="weibo"><a href="<?php echo ($vo["weibo"]); ?>"> <img src="__IMG__/weibo.png" height="25" width="35"></a></div>
+          <h4 class="clearfix"><?php echo ($vo["name"]); ?></h4>
+          <span id="intext" class=" grey"><?php echo ($vo["infor"]); ?></span>
+          <span id="intext"><a href="mailto:<?php echo ($vo["email"]); ?>" class="grey"><?php echo ($vo["email"]); ?></a></span>
        </div>
-         <div class="overlay">
-         <a  class="play  clearfix" data='{$vo.id}'><img src="__IMG__/playbtn.jpg" height="30" width="30"></a>
-        <p class="title red">{$vo.title}</p>
-        <p class="text"><span class="grey">Year :</span><span class="red">{$vo.year}</span></p>
-        <p class="text"><span class="grey">Client :</span><span class="red">{$vo.client}</span></p>
-        <p class="text"><span class="grey">Director :</span><span class="red">{$vo.director}</span></p>
-        <p class="text"><span class="grey">Producer :</span><span class="red">{$vo.product}</span></p>
-        <p class="text"><span class="grey">Agency :</span><span class="red">{$vo.agency}</span></p>
-        <p class="text"><span class="grey">Product :</span><span class="red">{$vo.product}</span></p>
-       </div>
-     </article>
-     </volist>
-    
+     </article><?php endforeach; endif; else: echo "" ;endif; ?>
    </section>
 </div>
 
-<div id="player" class="Overlaybox">
 </div>
 
 <footer>
   <span class="right">Copyright © ddsfilm.com 2012 all rights reserved </span>
 </footer>
-</div>
-
-<load href='__JS__/lazy.js' />
-<load href='__JS__/dropmenu.js' />
+<script type="text/javascript" src="__JS__/dropmenu.js"></script>
 <script type="text/javascript">
-
 $("document").ready(function(){
-	$("img.thumb").lazyload();
-
 	/*导航点击*/
 	$("#navTop li").click(function(){
 	  $(this).find("a").addClass("selected");
 	  $(this).siblings().find("a").removeClass("selected");
 	});
-	$(".loading").each(function(){
-       	$(this).hover(
-		function(){
-			$(this).find(".overlay").slideDown("fast");
-		},
-		function(){
-			$(this).find(".overlay").slideUp("fast");
-		});
-	});
+
 	/*
 	分类左移
 	*/
@@ -205,62 +165,27 @@ $("document").ready(function(){
 	
 	$("#menu li.parent").each(function(){
 	  $(this).hover(function(){
-		  $(this).find('.child').stop().show().animate({'opacity':'1','height':'500px'},500);
+		  $(this).find('.child').stop().animate({'opacity':'1','height':'500px'},500);
 	   },function(){
-		   $(this).find('.child').stop().hide().animate({'opacity':'0','height':'0px'},500); 
+		   $(this).find('.child').stop().animate({'opacity':'0','height':'0px'},500); 
 	   });	
 	});
 	
-	
-	
-	/*$(".loading").each(function(){
-		
-	$(this).bind('mousedown',function(){
-		$("#MainOverlay").show();
-	    $("#player").fadeIn(1000);	
-	});
-	});*/
 
-	$(".play").click(function(){
-	 var id=$(this).attr('data');
-	 $.ajax({
-	    url:"__URL__/video",
-		type:'post',
-		data:'id='+id,
-		success:function(data){
-			data=eval('('+data+')');
-			var html='<div class="left">';
-			html+='<div class="overlay">';
-			html+='<p class="title red">'+data['title']+'</p>';
-			html+='<p class="text\"><span class="grey">Year :</span><span class="red">'+data['year']+'</span></p>';
-			html+='<p class="text"><span class="grey">Client :</span><span class="red">'+data['client']+'</span></p>';
-			html+='<p class="text"><span class="grey">Director :</span><span class="red">'+data['director']+'</span></p>';
-			html+='<p class="text"><span class="grey">Producer :</span><span class="red">'+data['producer']+'</span></p>';
-			html+='<p class="text"><span class="grey">Agency :</span><span class="red">'+data['agency']+'</span></p>';
-			html+='<p class="text"><span class="grey">Product :</span><span class="red">'+data['product']+'</span></p></div>';
-			html+='<div id="playerclose"><span class="img left"><a href="javascript:void(0);" onclick="playerclose(this);" class="back"><img src="__IMG__/close.png" height=47 width=44></a></span>';
-			html+='<span class="left"><a href="javascript:void(0);" onclick="playerclose(this);" class="back  red">BACK</a></span> </div></div>';
-			html+='<div class="right"> <img src="__IMG__/video.jpg" height=453 width=735></div>';
-			$("#player").html(html);
-		}
-	 });	
-	 $("#MainOverlay").show();
-	 $("#player").fadeIn();	
 	
-	});
-	
-	
+	var wid=$(".intro").innerWidth();
+	var num=$(".intro").size();
+
+	var width=wid*num+40;
+	$("#box").css({'margin':'0px 0px 40px 242px','width':width});
+
+	/*#box .loading*/
 	changeposition();
 	$('#top-navigation').dropMenu();
 });
     $(window).resize(function(){
 	changeposition();
 	});
-    function playerclose(obj){						  
-	 $("#MainOverlay").hide();
-	 $("#player").fadeOut();
-	}
-	
 	function changeposition(){
 		var browwd=getTotalWidth();
 		
@@ -274,24 +199,23 @@ $("document").ready(function(){
 	     wid=0.25;
 	  var width=browwd*wid;
 	  var height=199*(width/360);
-	  $(".sub-menu").css({'width':browwd-250,'overflow':'hidden'});
-	  var num=$(".sub-menu .menu-item").length;
-	  var swid=(browwd-255)/num-60;
-	  $(".sub-menu .menu-item").css('width',swid);
-	  $("#box .loading").css({'height':height,'width':width});
+	  $("#box .loading").css('height',height);
 	  $(".frame").css('height',height-1);
 	  $(".overlay").css('height',height);
 	  $('.frame,.thumbCount a').css({'width':width-1});
 	  $('.thumbCount').css('width',width);
-	 
+	
+	   $(".sub-menu").css({'width':browwd-250,'overflow':'hidden'});
+	  var num=$(".sub-menu .menu-item").length;
+	  var swid=(browwd-255)/num-60;
+	  $(".sub-menu .menu-item").css('width',swid);
 	}
 	function getTotalWidth(){
 	 if($.browser.msie){
-		 
 		 var wid=document.compatMode=="CSS1Compat"?document.documentElement.clientWidth:document.body.clientWidth;
-		if($.browser.version>6){
+		 if($.browser.version>6){
 		 wid=wid-5;
-		}
+		} 
 	 }else{
 		 var wid=self.innerWidth-18;
 	 }
@@ -302,7 +226,7 @@ $("document").ready(function(){
 <!--[if IE 6]>
 <script type="text/javascript" src="__JS__/png.js"></script>
 <script type="text/javascript">
-DD_belatedPNG.fix('#navTop li.selected a,#box .overlay,#player div.left,.back img');
+DD_belatedPNG.fix('#navTop li.selected a,.infor #weibo img');
 </script>
 <![endif]-->
 </body>

@@ -46,5 +46,12 @@
   
   </table>
 </div>
+<script type="text/javascript" src="__JS__/Admin/dellist.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var module="team"
+	$("#del").delList("__URL__","del",module);
+});
+</script>
 </body>
 </html>

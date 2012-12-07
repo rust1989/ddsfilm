@@ -1,5 +1,6 @@
 <?php
-
+$lifeTime = 3600;   
+session_set_cookie_params($lifeTime); 
 
 define('APP_NAME','hongsheng');//项目名称
 

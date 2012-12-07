@@ -39,8 +39,10 @@ KindEditor.ready(function(K) {
       <td colspan="2" align="center" height="50"><input type="submit" name="submit" class="submit" value=""  /></td>
     </tr>
     </form> 
+    
+  </table>
   
-  </table> 
 </div>
+
 </body>
 </html>

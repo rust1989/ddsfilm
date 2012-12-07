@@ -15,7 +15,7 @@
    <tr>
      <td class="right_title_1" height="50" colspan="2"></td>
    </tr>
-   <form method="post" action="__URL__/save/method/<?php echo ($method); ?>" enctype="multipart/form-data" onsubmit="editor.sync();">
+   <form method="post" action="__URL__/save/method/<?php echo ($method); ?>" enctype="multipart/form-data" >
     
     <tr>
       <td width="40%" class="left_title_2"><?php echo L('IDNAME');?>:</td>

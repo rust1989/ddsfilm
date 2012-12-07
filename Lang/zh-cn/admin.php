@@ -52,7 +52,7 @@ return array(
 	
 	'CONTENT'=>'内容',
 	
-	'IMG'=>'图片',
+	'PIC'=>'图片',
 	
 	'INFOR'=>'简介',
 	

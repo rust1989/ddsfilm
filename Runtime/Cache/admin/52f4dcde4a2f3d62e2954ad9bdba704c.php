@@ -3,11 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
 <link rel="stylesheet" href="__CSS__/Admin/common.css" type="text/css" />
-<<<<<<< HEAD
 <script type="text/javascript" src="__JS__/Admin/jquery.js"></script>
-=======
-<script type="text/javascript" src="__JS__/jquery.js"></script>
->>>>>>> 09c7db3d94c5e39a5a9bee407adce6e7eeafe50e
 <title>管理区域</title>
 </head>
 <script type="text/javascript">

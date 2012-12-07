@@ -34,7 +34,7 @@ a:hover{
 .bodyTitle{
 	width:100%;
 	height:33px;
-	background:url(../../Images/body_title_bg.gif) top left repeat-x;
+	background:url(../../Images/Admin/body_title_bg.gif) top left repeat-x;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:5px;
@@ -44,7 +44,7 @@ a:hover{
 	width:30px;
 	height:33px;
 	float:left;
-	background:url(../../Images/body_title_left.gif) right bottom no-repeat;
+	background:url(../../Images/Admin/body_title_left.gif) right bottom no-repeat;
 }
 .bodyTitleText{
 	height:27px;
@@ -56,7 +56,7 @@ a:hover{
 	letter-spacing:2px;
 	padding-left:8px;
 	padding-right:8px;
-	background:#FFF url(../../Images/body_title_right.gif) right bottom no-repeat;
+	background:#FFF url(../../Images/Admin/body_title_right.gif) right bottom no-repeat;
 }
 .bgFleet {
 	background-color: #E8F3FD;
@@ -80,7 +80,7 @@ a:hover{
 .inputButton {
 	border: 1px solid #329AD7;
 	color: #FFFFFF;
-	background-image: url(../../Images/menu_title_bg.jpg);
+	background-image: url(../../Images/Admin/menu_title_bg.jpg);
 	background-repeat: repeat-x;
 	height: 30px;
 	padding-right: 10px;
@@ -91,7 +91,7 @@ a:hover{
 	padding-left:3px;
 	padding-right:2px;
 	border:1px solid #bdbcbd;
-	background:#FFF url(../../Images/inputbut_bg.gif) left center repeat-x;
+	background:#FFF url(../../Images/Admin/inputbut_bg.gif) left center repeat-x;
 	font-size:12px;
 	height:24px;
 	padding-top:2px;
@@ -133,9 +133,9 @@ textarea, input{ padding:2px; border:1px solid; border-color:#666 #eee #eee #666
 .radio{ margin-top:-1px; border:none; vertical-align:middle; }
 .checkbox{ height:14px; border:none; vertical-align:middle; }
 .datalist{ clear:both; width:100%; border-top:2px solid #B5CFD9; border-bottom:2px solid #B5CFD9; }
-	.datalist th{ line-height:250%; text-align:left; background:url(../../Images/bg_repx.gif) repeat-x 0 bottom; color:#9EBECB; font-size:12px; }
-	.datalist td{ padding:5px 0; background:url(../../Images/bg_repx.gif) repeat-x 0 bottom; }
-	.currenttr td{ background:#F2F9FD url(../../Images/bg_repx.gif) repeat-x 0 bottom; }
+	.datalist th{ line-height:250%; text-align:left; background:url(../../Images/Admin/bg_repx.gif) repeat-x 0 bottom; color:#9EBECB; font-size:12px; }
+	.datalist td{ padding:5px 0; background:url(../../Images/Admin/bg_repx.gif) repeat-x 0 bottom; }
+	.currenttr td{ background:#F2F9FD url(../../Images/Admin/bg_repx.gif) repeat-x 0 bottom; }
 	.datalist a{ text-decoration:none; }
 		.datalist a:hover{ text-decoration:none; }
 	.datalist .txt{ width:90%; overflow:hidden; }
@@ -169,7 +169,7 @@ h3{ font-size:14px; }
 	.i a{ text-decoration:underline; }
 	.i a:hover{ text-decoration:none; }
 .memlist{ list-style:none; margin:7px 0 25px; padding-top:2px; border-top:2px solid #B5CFD9; width:80%;}
-	.memlist li{ clear:both; overflow:hidden; zoom:1; padding:5px 0; *padding:1px 0 5px; line-height:150%; background:url(../../images/bg_repx.gif) repeat-x 0 bottom; }
+	.memlist li{ clear:both; overflow:hidden; zoom:1; padding:5px 0; *padding:1px 0 5px; line-height:150%; background:url(../../Images/Admin/bg_repx.gif) repeat-x 0 bottom; }
 	.memlist em{ float:left; width:120px; font:12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; }
 	.memlist .memcont{ width:480px; }
 .ajax{ width:360px; border:1px solid #89B3C2; }
@@ -181,5 +181,5 @@ h3{ font-size:14px; }
 		.alert a.abtn{ margin-left:20px; text-decoration:underline; }
 			.alert a.abtn:hover{ text-decoration:none; }
 .rtninfo{ margin:50px auto; width:500px; line-height:180%; }
-	.rtninfo h4{ margin-bottom:10px; padding-left:25px; background:url(../../Images/bg_repno.gif) no-repeat -275px -98px; font-size:14px; }
+	.rtninfo h4{ margin-bottom:10px; padding-left:25px; background:url(../../Images/Admin/bg_repno.gif) no-repeat -275px -98px; font-size:14px; }
 	.rtninfo p{ margin-left:25px; }
