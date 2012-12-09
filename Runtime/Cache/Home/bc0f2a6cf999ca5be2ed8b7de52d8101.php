@@ -54,7 +54,7 @@ function loadTimeout(){
 <img src='__IMG__/load.gif' height='16' width='16'/>
 </div>
 
-<div id="contain" style="padding-top:98px;">
+<div id="contain">
 <div id="icon">
  <ul><li><a href="javascript:void(0);"><img src="__IMG__/picon.jpg" height="32" width="32"></a></li><li><a href="javascript:void(0);"><img src="__IMG__/wicon.png" height="32" width="32"></a></li></ul>
 </div>
@@ -62,7 +62,7 @@ function loadTimeout(){
   <div id="title">
     <img src="__IMG__/logo.jpg" height="60" width="178">
   </div>
-  <div class=" headernav">
+  <div class="headernav clearfix">
           <nav id="navTop">
              <ul>
              <li><a href="__URL__"  data="作品集">FILMS</a></li>
@@ -74,44 +74,71 @@ function loadTimeout(){
         <div id="top-navigation">	
                 <ul class="menu" id="menu-top-navigation">
                     <li class="menu-item">
-                        <a href="" onClick="jump("__URL__/about")" class="parent" data="关于我们">ABOUT</a>
+                        <a href="#about"  class="parent" data="关于我们">ABOUT</a>
                     </li>
                 
                     <li class="menu-item">
-                        <a onClick="jump("__URL__/team")" class="parent" data="团队">TEAM</a>  
+                        <a href="#team" class="parent" data="团队">TEAM</a>  
                     </li>
                     <li class="menu-item">
-                        <a onClick="jump("__URL__/client")" class="parent" data="客户">CLIENTS</a>  
+                        <a  href="#clients" class="parent" data="客户">CLIENTS</a>  
                     </li>
                     <li class="menu-item">
-                        <a onClick="jump("__URL__/contact")" class="parent" data="联系我们">CONTACT</a>  
+                        <a href="#contact" class="parent" data="联系我们">CONTACT</a>  
                     </li>
                 </ul>
         </div> 
    </div> 
 </header>
+<div class="clearfix">
+   <section id="box" style="width:858px; margin:0px auto 150px;">
+     <article id="about" class="section" >
+           <h1><?php echo (strtoupper($about['model'])); ?></h1>
+          <div class="content"><?php echo ($about['content']); echo ($about['content']); echo ($about['content']); ?></div>
+     </article>
 
-<div id="main" role="main">
-   <div id="MainOverlay"></div>
-   <section id="box" class="clearfix">
-     <?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><article class="intro">
-       <div class="clearfix"><img src="<?php echo (substr($vo["pic"],1)); ?>"></div>
-       <div class="infor">
-         <div id="weibo"><a href="<?php echo ($vo["weibo"]); ?>"> <img src="__IMG__/weibo.png" height="25" width="35"></a></div>
-          <h4 class="clearfix"><?php echo ($vo["name"]); ?></h4>
-          <span id="intext" class=" grey"><?php echo ($vo["infor"]); ?></span>
-          <span id="intext"><a href="mailto:<?php echo ($vo["email"]); ?>" class="grey"><?php echo ($vo["email"]); ?></a></span>
-       </div>
-     </article><?php endforeach; endif; else: echo "" ;endif; ?>
+    
+     <article id="team" class="section">
+     <h1>TEAM</h1>
+          <?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><article class="intro">
+               <div class="clearfix"><img src="/ddsfilm/<?php echo (substr($vo["pic"],1)); ?>"></div>
+               <div class="infor">
+                 <div id="weibo"><a href="<?php echo ($vo["weibo"]); ?>"> <img src="__IMG__/weibo.png" height="25" width="35"></a></div>
+                  <h4 class="clearfix"><?php echo ($vo["name"]); ?></h4>
+                  <span id="intext" class=" grey"><?php echo ($vo["infor"]); ?></span>
+                  <span id="intext"><a href="mailto:<?php echo ($vo["email"]); ?>" class="grey"><?php echo ($vo["email"]); ?></a></span>
+               </div>
+             </article><?php endforeach; endif; else: echo "" ;endif; ?>
+     </article>
+    
+     <article id="clients" class="section">
+     <h1>CLIENTS</h1>
+          <?php if(is_array($clients)): $i = 0; $__LIST__ = $clients;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><article class="intro">
+             
+               <div class="clearfix"><img src="/ddsfilm/<?php echo (substr($vo["pic"],1)); ?>"></div>
+               <div class="infor">
+                  <h4 class="clearfix"><?php echo ($vo["name"]); ?></h4>
+                  <span id="intext" class=" grey"><?php echo ($vo["infor"]); ?></span>
+                  <span id="intext"><a href="mailto:<?php echo ($vo["email"]); ?>" class="grey"><?php echo ($vo["email"]); ?></a></span>
+               </div>
+             </article><?php endforeach; endif; else: echo "" ;endif; ?>
+     </article>
+     
+     <article id="contact" class="section">
+        <article>
+          <h1><?php echo (strtoupper($contact['model'])); ?></h1>
+          <div class="content"><?php echo ($contact['content']); echo ($contact['content']); echo ($contact['content']); ?></div>
+        </article>
+     </article>
    </section>
 </div>
-
 </div>
-
 <footer>
   <span class="right">Copyright © ddsfilm.com 2012 all rights reserved </span>
 </footer>
 <script type="text/javascript" src="__JS__/dropmenu.js"></script>
+<script type="text/javascript" src="__JS__/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="__JS__/jquery.nav.min.js"></script>
 <script type="text/javascript">
 $("document").ready(function(){
 	/*导航点击*/
@@ -119,6 +146,10 @@ $("document").ready(function(){
 	  $(this).find("a").addClass("selected");
 	  $(this).siblings().find("a").removeClass("selected");
 	});
+	 $('#menu-top-navigation').onePageNav({
+	filter: ':not(.external)',
+	scrollThreshold: 0.25
+   });
 
 	/*
 	分类左移
@@ -171,13 +202,6 @@ $("document").ready(function(){
 	   });	
 	});
 	
-
-	
-	var wid=$(".intro").innerWidth();
-	var num=$(".intro").size();
-
-	var width=wid*num+40;
-	$("#box").css({'margin':'0px 0px 40px 242px','width':width});
 
 	/*#box .loading*/
 	changeposition();

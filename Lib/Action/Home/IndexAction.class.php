@@ -20,23 +20,21 @@ class IndexAction extends Action{
    public function company(){
 	  $teams=D('team')->select(); 
 	  $procates=D('procates')->select();
+	 
+	  
+	  $clients=D('client')->select();
+	  $contact=D('article')->where(array('model'=>'contact'))->find();
+	  $about=D('article')->where(array('model'=>'about'))->find();
+	  
+	  
+	  
+	  $this->assign('contact',$contact);
+	  $this->assign('about',$about);
 	  $this->assign('procates',$procates); 
-	  $this->assign('teams',$teams); 
+	  $this->assign('teams',$teams);
+	  $this->assign('clients',$clients);
 	  $this->display();   
    }
-   public function article(){
-	   $model=isset($_GET['model'])?dhtml($_GET['model']):"";
-	   if(empty($model)) $this->redirect('company');
-	   $list=D('article')->where(array('model'=>$model))->find();
-	   _json($list);
-   }
-    public function team(){
-	   $list=D('team')->select();
-	   _json($list);
-   }
-   public function client(){
-	  $list=D('cliennt')->select();
-	  _json($list); 
-   }
+  
 }
 ?>

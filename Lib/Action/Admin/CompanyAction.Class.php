@@ -16,8 +16,9 @@ class CompanyAction extends GobalAction {
 		$DB=D('article');
 		switch($method){
 			case "save":
-			$sql="replace into ".C('DB_PREFIX')."article(title,content,date,model) values('$title',$content,'$time','$model') ";
-			$DB->query($sql);
+			$sql="replace into ".C('DB_PREFIX')."article(title,content,date,model) values('$title','$content','$time','$model') ";
+	
+    		$DB->query($sql);
 			break;
 		}
 		$list=$DB->where(array('model'=>$model))->find();
