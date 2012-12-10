@@ -7,12 +7,13 @@ a{text-decoration:none; outline-style:none; blr:expression(this.onFocus=this.blu
 img{border:none;}
 
 
-#contain{width:100%; margin:0 auto; display:none;}
+#contain{width:100%; margin:0 auto; /*display:none;*/}
 Images{border:none;}
 #main{ overflow:hidden;}
 #load{ position:absolute; top:50%; margin-top:-8px; left:50%; margin-left:-8px;}
-h1{ color: rgba(255, 255, 255, 0.9); font-weight:bold;letter-spacing: 2px;font-size: 2.0625em;line-height: 1.18182em;text-transform: uppercase;}
-.section{ float:left; display:block; padding-top:98px; padding-bottom:20px; border-bottom:1px solid #404040}
+h1{ color:#FFF;font-weight:bold;letter-spacing: 2px;font-size: 2.0625em;line-height: 1.18182em;text-transform: uppercase;}
+.section{ float:left; width:100%; display:block; padding-top:98px; padding-bottom:20px; border-bottom:1px solid #404040}
+.section h1{ margin-bottom:10px;}
 
 header{position:fixed; _position:absolute; top:0px;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop)); z-index:12;width:100%; }
 #icon{position:fixed; right:10px; _position:absolute; top:17px;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+17)); z-index:19;width:100px; }
@@ -134,7 +135,7 @@ html[xmlns] .clearfix { display: block; }
 .intro{ width:281px; margin-right:5px; }
 .infor{ margin-top:5px; padding:10px; background:url(../Images/inbg.jpg) no-repeat; height:90px;position:relative; }
 .infor h4{ color:#FFF; font-size:16px;  width:100%; line-height:30px;}
-#intext{margin:5px 0px;width:100%; display:block;}
+#intext{margin:5px 0px;width:260px; display:block;word-wrap: break-word;}
 .infor span a{text-decoration:underline;}
 .infor #weibo{position:absolute; z-index:1; right:5px; top:10px;}
 

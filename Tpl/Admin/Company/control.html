@@ -21,9 +21,10 @@
     <tr>
       <td width="40%" class="left_title_2"><?php echo L("".$column['Field']."");?>:</td>
      <if condition="strtolower($column[Field]) eq 'pic'">
-       <td width="60%" ><input type="file" name="{$column.Field}" value="" /></td>
+       <td width="60%" ><input type="file" name="{$column.Field}" value="<?php echo $list["".$column['Field'].""];?>" /></td>
     <else />
-        <td width="60%" ><input type="text" name="{$column.Field}" value="" /></td>
+       
+        <td width="60%" ><input type="text" name="{$column.Field}" value="<?php echo $list["".$column['Field'].""];?>" /></td>
     </if>
       
         </tr>

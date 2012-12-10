@@ -19,9 +19,10 @@
    <form method="post" action="__URL__/save/model/<?php echo ($model); ?>/method/<?php echo ($method); ?>" enctype="multipart/form-data" >
     <?php if(is_array($columns)): $i = 0; $__LIST__ = $columns;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$column): $mod = ($i % 2 );++$i;?><tr>
       <td width="40%" class="left_title_2"><?php echo L("".$column['Field']."");?>:</td>
-     <?php if(strtolower($column[Field]) == 'pic'): ?><td width="60%" ><input type="file" name="<?php echo ($column["Field"]); ?>" value="" /></td>
+     <?php if(strtolower($column[Field]) == 'pic'): ?><td width="60%" ><input type="file" name="<?php echo ($column["Field"]); ?>" value="<?php echo $list["".$column['Field'].""];?>" /></td>
     <?php else: ?>
-        <td width="60%" ><input type="text" name="<?php echo ($column["Field"]); ?>" value="" /></td><?php endif; ?>
+       
+        <td width="60%" ><input type="text" name="<?php echo ($column["Field"]); ?>" value="<?php echo $list["".$column['Field'].""];?>" /></td><?php endif; ?>
       
         </tr><?php endforeach; endif; else: echo "" ;endif; ?> 
 

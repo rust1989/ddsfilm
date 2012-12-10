@@ -22,7 +22,7 @@
 function loadTimeout(){
         var 
         //超时秒数
-        second = 1;
+        second = 5;
         //计时器
         timer = setInterval(function(){
             if(--second < 1){
@@ -43,16 +43,16 @@ function loadTimeout(){
         }
     }
     //调用
-    loadTimeout();
+  //  loadTimeout();
 </script>
 
 </head>
 
 
 <body>
-<div id="load">
+<!--<div id="load">
 <img src='__IMG__/load.gif' height='16' width='16'/>
-</div>
+</div>-->
 
 <div id="contain">
 <div id="icon">
@@ -62,7 +62,7 @@ function loadTimeout(){
   <div id="title">
     <img src="__IMG__/logo.jpg" height="60" width="178">
   </div>
-  <div class="headernav clearfix">
+  <div class="headernav">
           <nav id="navTop">
              <ul>
              <li><a href="__URL__"  data="作品集">FILMS</a></li>
@@ -90,11 +90,11 @@ function loadTimeout(){
         </div> 
    </div> 
 </header>
-<div class="clearfix">
+<div>
    <section id="box" style="width:858px; margin:0px auto 150px;">
      <article id="about" class="section" >
            <h1>{$about['model']|strtoupper}</h1>
-          <div class="content">{$about['content']}{$about['content']}{$about['content']}</div>
+          <div class="content"><?php echo html_entity_decode($about['content']);?></div>
      </article>
 
     
@@ -102,7 +102,7 @@ function loadTimeout(){
      <h1>TEAM</h1>
           <volist name="teams" id="vo">
              <article class="intro">
-               <div class="clearfix"><img src="/ddsfilm/{$vo.pic|substr=1}"></div>
+               <div class="clearfix"><img src="{$vo.pic|substr=1}"></div>
                <div class="infor">
                  <div id="weibo"><a href="{$vo.weibo}"> <img src="__IMG__/weibo.png" height="25" width="35"></a></div>
                   <h4 class="clearfix">{$vo.name}</h4>
@@ -112,17 +112,13 @@ function loadTimeout(){
              </article>
            </volist>
      </article>
-    
-     <article id="clients" class="section">
+       <article id="clients" class="section">
      <h1>CLIENTS</h1>
           <volist name="clients" id="vo">
              <article class="intro">
-             
-               <div class="clearfix"><img src="/ddsfilm/{$vo.pic|substr=1}"></div>
                <div class="infor">
                   <h4 class="clearfix">{$vo.name}</h4>
-                  <span id="intext" class=" grey">{$vo.infor}</span>
-                  <span id="intext"><a href="mailto:{$vo.email}" class="grey">{$vo.email}</a></span>
+                  <div id="intext" class=" grey">{$vo.infor}</div>
                </div>
              </article>
            </volist>
@@ -131,7 +127,7 @@ function loadTimeout(){
      <article id="contact" class="section">
         <article>
           <h1>{$contact['model']|strtoupper}</h1>
-          <div class="content">{$contact['content']}{$contact['content']}{$contact['content']}</div>
+          <div class="content"><?php echo html_entity_decode($contact['content']);?></div>
         </article>
      </article>
    </section>

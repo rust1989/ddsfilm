@@ -22,7 +22,7 @@
 function loadTimeout(){
         var 
         //超时秒数
-        second = 1;
+        second = 5;
         //计时器
         timer = setInterval(function(){
             if(--second < 1){
@@ -43,16 +43,16 @@ function loadTimeout(){
         }
     }
     //调用
-    loadTimeout();
+  //  loadTimeout();
 </script>
 
 </head>
 
 
 <body>
-<div id="load">
+<!--<div id="load">
 <img src='__IMG__/load.gif' height='16' width='16'/>
-</div>
+</div>-->
 
 <div id="contain">
 <div id="icon">
@@ -62,7 +62,7 @@ function loadTimeout(){
   <div id="title">
     <img src="__IMG__/logo.jpg" height="60" width="178">
   </div>
-  <div class="headernav clearfix">
+  <div class="headernav">
           <nav id="navTop">
              <ul>
              <li><a href="__URL__"  data="作品集">FILMS</a></li>
@@ -90,18 +90,18 @@ function loadTimeout(){
         </div> 
    </div> 
 </header>
-<div class="clearfix">
+<div>
    <section id="box" style="width:858px; margin:0px auto 150px;">
      <article id="about" class="section" >
            <h1><?php echo (strtoupper($about['model'])); ?></h1>
-          <div class="content"><?php echo ($about['content']); echo ($about['content']); echo ($about['content']); ?></div>
+          <div class="content"><?php echo html_entity_decode($about['content']);?></div>
      </article>
 
     
      <article id="team" class="section">
      <h1>TEAM</h1>
           <?php if(is_array($teams)): $i = 0; $__LIST__ = $teams;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><article class="intro">
-               <div class="clearfix"><img src="/ddsfilm/<?php echo (substr($vo["pic"],1)); ?>"></div>
+               <div class="clearfix"><img src="<?php echo (substr($vo["pic"],1)); ?>"></div>
                <div class="infor">
                  <div id="weibo"><a href="<?php echo ($vo["weibo"]); ?>"> <img src="__IMG__/weibo.png" height="25" width="35"></a></div>
                   <h4 class="clearfix"><?php echo ($vo["name"]); ?></h4>
@@ -110,16 +110,12 @@ function loadTimeout(){
                </div>
              </article><?php endforeach; endif; else: echo "" ;endif; ?>
      </article>
-    
-     <article id="clients" class="section">
+       <article id="clients" class="section">
      <h1>CLIENTS</h1>
           <?php if(is_array($clients)): $i = 0; $__LIST__ = $clients;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><article class="intro">
-             
-               <div class="clearfix"><img src="/ddsfilm/<?php echo (substr($vo["pic"],1)); ?>"></div>
                <div class="infor">
                   <h4 class="clearfix"><?php echo ($vo["name"]); ?></h4>
-                  <span id="intext" class=" grey"><?php echo ($vo["infor"]); ?></span>
-                  <span id="intext"><a href="mailto:<?php echo ($vo["email"]); ?>" class="grey"><?php echo ($vo["email"]); ?></a></span>
+                  <div id="intext" class=" grey"><?php echo ($vo["infor"]); ?></div>
                </div>
              </article><?php endforeach; endif; else: echo "" ;endif; ?>
      </article>
@@ -127,7 +123,7 @@ function loadTimeout(){
      <article id="contact" class="section">
         <article>
           <h1><?php echo (strtoupper($contact['model'])); ?></h1>
-          <div class="content"><?php echo ($contact['content']); echo ($contact['content']); echo ($contact['content']); ?></div>
+          <div class="content"><?php echo html_entity_decode($contact['content']);?></div>
         </article>
      </article>
    </section>

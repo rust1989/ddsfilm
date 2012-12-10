@@ -35,11 +35,11 @@ return array(
 	
 	'TMPL_PARSE_STRING'  =>array(
 
-     '__JS__' => '/ddsfilm/Public/Js', // 增加新的JS类库路径替换规则
+     '__JS__' => '/Public/Js', // 增加新的JS类库路径替换规则
   
-     '__CSS__' => '/ddsfilm/Public/Css', // 增加新的css类库路径替换规
+     '__CSS__' => '/Public/Css', // 增加新的css类库路径替换规
  
-     '__IMG__' => '/ddsfilm/Public/Images', // 增加新的img类库路径替换
+     '__IMG__' => '/Public/Images', // 增加新的img类库路径替换
       
      '__UPLOAD__' => './Uploads' // 增加新的上传路径替换规则
 	  ),

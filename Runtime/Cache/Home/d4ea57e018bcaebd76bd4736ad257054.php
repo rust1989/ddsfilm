@@ -22,7 +22,7 @@
 function loadTimeout(){
         var 
         //超时秒数
-        second = 1;
+        second = 5;
         //计时器
         timer = setInterval(function(){
             if(--second < 1){
@@ -44,16 +44,16 @@ function loadTimeout(){
         }
     }
     //调用
-    loadTimeout();
+  //  loadTimeout();
 </script>
 
 </head>
 
 
 <body>
-<div id="load">
+<!--<div id="load">
 <img src='__IMG__/load.gif' height='16' width='16'/>
-</div>
+</div>-->
 
 <div id="contain" style="padding-top:98px;">
 <div id="icon">
@@ -79,7 +79,7 @@ function loadTimeout(){
                     </li>
                 
                     <li class="menu-item">
-                        <a href="" class="parent" data="分类">BY GENRE</a>
+                        <a href="javascript:void(0);" class="parent" data="分类">BY GENRE</a>
                         <ul class="sub-menu">
                           <?php if(is_array($procates)): $i = 0; $__LIST__ = $procates;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($i == 1): ?><li class=" first menu-item">
                                 <a class="child" href="__URL__/index/id/<?php echo ($vo["id"]); ?>" data="<?php echo ($vo["name"]); ?>"><?php echo ($vo["ename"]); ?></a>
@@ -106,7 +106,7 @@ function loadTimeout(){
        <div class="frame " >
          <div class="thumbCount" >
            <a > 
-             <img class="thumb" src="__IMG__/loading.gif" data-original="<?php echo ($vo["pic"]); ?>" style="transition:opacity 0.75s linear 0s;opacity:1" />
+             <img class="thumb" src="__IMG__/loading.gif" data-original="<?php echo (substr($vo["pic"],1)); ?>" style="transition:opacity 0.75s linear 0s;opacity:1" />
            </a>
          </div>
        </div>
@@ -276,6 +276,7 @@ $("document").ready(function(){
 	  $(".frame").css('height',height-1);
 	  $(".overlay").css('height',height);
 	  $('.frame,.thumbCount a').css({'width':width-1});
+	  $('.frame .thumb').css({'width':width-1});
 	  $('.thumbCount').css('width',width);
 	 
 	}
