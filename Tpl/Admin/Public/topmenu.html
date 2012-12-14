@@ -20,9 +20,11 @@
 		<ul>
 			<li class="navleft"></li>
 			<li id='d1' style="margin-left:-1px"><A href="__GROUP__/Menu/menu" target="mcMenuFrame" class="tabon">首页</A></li>
-			<li id='d2'><A href="__GROUP__/Menu/menu/action/User" target="mcMenuFrame" >帐户管理</A></li>
-            <li id='d2'><A href="__GROUP__/Menu/menu/action/Project" target="mcMenuFrame" >作品管理</A></li>
-             <li id='d2'><A href="__GROUP__/Menu/menu/action/Company" target="mcMenuFrame" >公司信息管理</A></li>
+			<li id='d2'><A href="__GROUP__/Menu/menu/action/Setting" target="mcMenuFrame" >系统管理</A></li>
+            <li id='d3'><A href="__GROUP__/Menu/menu/action/User" target="mcMenuFrame" >帐户管理</A></li>
+            <li id='d4'><A href="__GROUP__/Menu/menu/action/Project" target="mcMenuFrame" >作品管理</A></li>
+             <li id='d5'><A href="__GROUP__/Menu/menu/action/Company" target="mcMenuFrame" >公司信息管理</A></li>
+             <li id='d6'><A href="__GROUP__/Menu/menu/action/Menu" target="mcMenuFrame" >栏目管理</A></li>
 			<li class="navright"></li>
 		</ul>
 	</div>

@@ -124,11 +124,10 @@
 	}
 	/*
 	删除数据
-	id号
-	DB模块
 	*/
-	public function _del($id,$DB){
-		
+	public function _del(){
+		$id=isset($_POST['id'])?dhtml($_POST['id']):"";
+		$DB=isset($_POST['db'])?dhtml($_POST['db']):"";
 		$DB=D("$DB");
 		if(empty($id)||empty($DB)) return false;
 		if(is_numeric($id)){
@@ -141,6 +140,91 @@
 		 }
 		}
 		return true;
+	}
+	/*
+	操作页面
+	*string model 模块
+	*array unset 不输出字段
+	*/
+	public function _control($model,$unset){
+	    $model=isset($_GET['model'])?dhtml($_GET['model']):"";
+		if(empty($model)) $this->redirect('Index/main');
+		$DB=D("".$model."");
+		$method=isset($_GET['method'])?dhtml($_GET['method']):'';
+		if(empty($method)) $this->error('',__URL__.'/model/'.$model);
+		if($method=="edit"){
+		   $id=isset($_GET['id'])?intval($_GET['id']):"";
+		   if(!$id) $this->error(L('IDNULL'),__URL__.'/model/'.$model);	
+		   $list=$DB->where("id=$id")->find();
+		   $this->assign('list',$list);	
+		}
+		$columns=$DB->query("show columns from ".C('DB_PREFIX')."$model");
+		
+		for($i=0;$i<count($columns);$i++){
+			if(is_array($unset)){
+				for($j=0;$j<count($unset);$j++){
+					if($columns[$i]['Field']==$unset[$j])
+					unset($columns[$i]);
+				}
+			}
+		}
+		
+		$this->assign('columns',$columns);
+		$this->assign('method',$method);
+		$this->assign('model',$model);
+		$this->display();	
+	}
+	/*
+	操作方法
+	*/
+	public function _save(){
+		$model=isset($_GET['model'])?dhtml($_GET['model']):"";
+		if(empty($model)) $this->redirect('Index/main');
+		$DB=D("".$model."");
+		$method=dhtml($_GET['method']);
+		if(empty($method)) $this->error('',__URL__.'/'.$model);
+		//$DB=new TeamModel('team');
+		if (!$DB->create()){
+		$this->error($DB->getError(),__URL__.'/'.$model);
+		}else{
+		$module="img";
+		$path=date("Ymd");
+			switch($method){
+				case "add":
+				if(!empty($_FILES['pic']['name'])){
+				$pic=$this->_upload($module,$path);
+				$img=$pic[0]['savepath'].$pic[0]['savename'];
+				$DB->pic=$img;
+				}
+				$query=$DB->add();
+				$this->_jump($query,"_list/model/$model");
+				break;
+				case "edit":
+				if(!empty($_FILES['pic']['name'])){
+				$pic=$this->_upload($module,$path);
+				$img=$pic[0]['savepath'].$pic[0]['savename'];
+				$DB->pic=$img;
+				}
+				$query=$DB->save();
+				$this->_jump($query,"_list/model/$model","edit");
+				break;
+			}
+		}
+	}
+	/*
+	罗列列表
+	*string model 模块
+	*/
+	public function _list($model){
+	   $DB=M("$model");
+	   $num=$DB->count();
+	   $page=new Page($num,20);
+	   $show=$page->show();
+	   $list=$DB->limit($page->firstRow.','.$page->listRows)->select();
+	   $this->assign('model',$model);
+	   $this->assign('list',$list);
+	   $this->assign('show',$show);
+	   $this->display('index');	
 	}
 }
 ?>

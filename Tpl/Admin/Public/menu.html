@@ -40,7 +40,19 @@ function refreshMainFrame(url)
 <div class="menu">
 
 <switch name="action">
+<case value="Setting">
 
+    <dl>
+        <dt><a href="" onclick="return showHide('items0');" target="_self">系统管理</a></dt>
+        <dd id="items0" style="display:block;">
+            <ul>
+				<li><a href='__GROUP__/Setting/'>系统配置</a></li> 
+            </ul>
+        </dd>
+    </dl>
+<script type="text/javascript">refreshMainFrame('__GROUP__/Setting/');</script>
+
+</case>
 <case value="User">
 
     <dl>
@@ -84,6 +96,19 @@ function refreshMainFrame(url)
         </dd>
     </dl>
 <script type="text/javascript">refreshMainFrame('__GROUP__/Project/');</script>
+
+</case>
+<case value="Menu">
+
+    <dl>
+        <dt><a href="" onclick="return showHide('items0');" target="_self">栏目管理</a></dt>
+        <dd id="items0" style="display:block;">
+            <ul>
+			 <li><a href='__GROUP__/Menu/_list'>栏目管理</a></li>   
+            </ul>
+        </dd>
+    </dl>
+<script type="text/javascript">refreshMainFrame('__GROUP__/Menu/_list');</script>
 
 </case>
 <default />

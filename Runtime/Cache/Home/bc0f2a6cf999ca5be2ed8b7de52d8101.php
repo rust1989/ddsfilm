@@ -71,7 +71,7 @@ function loadTimeout(){
           </nav>
     
         
-        <div id="top-navigation">	
+        <div id="top-navigation" class="clearfix">	
                 <ul class="menu" id="menu-top-navigation">
                     <li class="menu-item">
                         <a href="#about"  class="parent" data="关于我们">ABOUT</a>

@@ -62,9 +62,8 @@ class CompanyAction extends GobalAction {
 		}
 	}
 	public function del(){
-		$id=isset($_POST['id'])?dhtml($_POST['id']):"";
-		$DB=isset($_POST['db'])?dhtml($_POST['db']):"";
-		return $this->_del($id,$DB);	
+		
+		return $this->_del();	
 	}
 	public function _list(){
 		$model=isset($_GET['model'])?dhtml($_GET['model']):"";

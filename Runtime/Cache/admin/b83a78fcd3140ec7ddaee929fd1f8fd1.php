@@ -39,7 +39,16 @@ function refreshMainFrame(url)
 <body>
 <div class="menu">
 
-<?php switch($action): case "User": ?><dl>
+<?php switch($action): case "Setting": ?><dl>
+        <dt><a href="" onclick="return showHide('items0');" target="_self">系统管理</a></dt>
+        <dd id="items0" style="display:block;">
+            <ul>
+				<li><a href='__GROUP__/Setting/'>系统配置</a></li> 
+            </ul>
+        </dd>
+    </dl>
+<script type="text/javascript">refreshMainFrame('__GROUP__/Setting/');</script><?php break;?>
+<?php case "User": ?><dl>
         <dt><a href="" onclick="return showHide('items0');" target="_self">账户管理</a></dt>
         <dd id="items0" style="display:block;">
             <ul>
@@ -72,6 +81,15 @@ function refreshMainFrame(url)
         </dd>
     </dl>
 <script type="text/javascript">refreshMainFrame('__GROUP__/Project/');</script><?php break;?>
+<?php case "Menu": ?><dl>
+        <dt><a href="" onclick="return showHide('items0');" target="_self">栏目管理</a></dt>
+        <dd id="items0" style="display:block;">
+            <ul>
+			 <li><a href='__GROUP__/Menu/_list'>栏目管理</a></li>   
+            </ul>
+        </dd>
+    </dl>
+<script type="text/javascript">refreshMainFrame('__GROUP__/Menu/_list');</script><?php break;?>
 <?php default: ?>
 
     <dl>
